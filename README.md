@@ -21,5 +21,5 @@ To receive data from the microservice:
                }
 
 UML Sequence Diagram
-![Project Screenshot](assets/image1.jpg)
+![Project Screenshot](assets/image1.png)
 

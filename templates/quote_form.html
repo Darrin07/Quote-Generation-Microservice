@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quote Generator</title>
+  </head>
+  <body>
+    <h1>Hydration Progress Quote Generator</h1>
+    <form action="/get_quote" method="get">
+      <label for="user_id">User ID:</label><br>
+      <input type="text" id="user_id" name="user_id"><br>
+      <label for="progress_level">Progress Level (e.g., 0%, 50%, 100%):</label><br>
+      <input type="text" id="progress_level" name="progress_level"><br><br>
+      <input type="submit" value="Get Quote">
+    </form>
+    <br>
+    {% if quote %}
+      <h2>Quote for User {{ user_id }}:</h2>
+      <p>{{ quote }}</p>
+    {% endif %}
+  </body>
+</html>
